@@ -61,24 +61,22 @@ p {
 
 a:link {
     color: #20478b;
-    background-color: transparent;
     text-decoration: none;
 }
 
 a:visited {
     color: #20478b;
-    background-color: transparent;
     text-decoration: none;
 }
 
 a:hover {
     color: #4789f2;
-    text-align: center;
     text-decoration: none;
 }
 
 a:active {
     color: #20478b;
+    text-decoration: none;
 }
 
 button {
@@ -126,3 +124,5 @@ span {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+/* Comentário no CSS */
