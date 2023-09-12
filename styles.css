@@ -89,6 +89,19 @@ button:hover {
     cursor: pointer;
 }
 
+#cabecalho {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+span {
+    padding: 0 20px;
+}
+
 #profissional {
     background-image: url('/imagens/background-op30.jpeg');
     background-repeat: no-repeat;
@@ -97,6 +110,12 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#adress {
+    background-color: #20478b;
+    color: white;
+    padding:10px;
 }
 
 #whatsapp {
