@@ -59,6 +59,10 @@ p {
     margin-right: 20px;
 }
 
+abbr {
+    text-decoration: none;
+}
+
 a:link {
     color: #20478b;
     text-decoration: none;
@@ -85,6 +89,7 @@ button {
 
 button:hover {
     cursor: pointer;
+    
 }
 
 nav {
@@ -109,7 +114,7 @@ span {
     align-items: center;
 }
 
-#adress {
+footer {
     background-color: #20478b;
     color: white;
     padding:10px;
