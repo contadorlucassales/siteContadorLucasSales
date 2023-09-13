@@ -111,9 +111,14 @@ nav {
     background-color: #20478b;
 }
 
-
-span {
+.navItem {
+    color: white;
     padding: 0 20px;
+}
+
+
+.footerItem {
+    padding: 0 10px;
 }
 
 #profissional {
@@ -127,6 +132,9 @@ span {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #20478b;
     color: white;
     padding:10px;
@@ -136,9 +144,5 @@ footer {
     position: fixed; bottom: 30px; right: 30px; z-index: 9999;
 }
 
-.explicacoes {
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
 /* Comentário no CSS */
