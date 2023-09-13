@@ -59,8 +59,18 @@ p {
     margin-right: 20px;
 }
 
+ul {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 figure {
     text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height:auto;
 }
 
 a:link {
@@ -98,7 +108,9 @@ nav {
     align-items: center;
     width: 100%;
     padding: 10px 0;
+    background-color: #20478b;
 }
+
 
 span {
     padding: 0 20px;
