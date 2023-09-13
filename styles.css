@@ -59,6 +59,10 @@ p {
     margin-right: 20px;
 }
 
+figure {
+    text-align: center;
+}
+
 a:link {
     color: #20478b;
     text-decoration: none;
