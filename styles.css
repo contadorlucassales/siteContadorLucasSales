@@ -86,6 +86,9 @@ button:hover {
     cursor: pointer;   
 }
 
+abbr {
+    text-decoration: none;
+}
 /* Itens do Index */
 
 #navIndex {
