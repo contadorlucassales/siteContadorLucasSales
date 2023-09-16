@@ -106,6 +106,7 @@ button:hover {
     background-image: url('imagens/background-op30.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 50vh;
     display: flex;
     justify-content: center;
