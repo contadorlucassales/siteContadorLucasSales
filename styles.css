@@ -117,6 +117,21 @@ abbr {
     align-items: center;
 }
 
+.contact-container {
+    display: grid;
+    grid-gap: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.left, .right {
+    flex-direction: column;
+}
+
+.textoContato {
+    vertical-align: middle;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
