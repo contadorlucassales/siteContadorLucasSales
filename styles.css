@@ -128,10 +128,6 @@ abbr {
     flex-direction: column;
 }
 
-.textoContato {
-    vertical-align: middle;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -182,7 +178,8 @@ section::after {
 }
 
 .logoContato {
-    width:42px
+    width:42px;
+    vertical-align: middle;
 }
 
 .footerItem {
@@ -200,6 +197,12 @@ section::after {
     .footerItem {
         padding: 0 5px;
       }
+      .contact-container {
+        grid-gap: 20px;
+    }
+    .textoContato {
+        font-size: 12px;
+    }
 }
 
 /* Comentário no CSS */
