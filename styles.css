@@ -198,10 +198,10 @@ section::after {
         padding: 0 5px;
       }
       .contact-container {
-        grid-gap: 20px;
+        grid-gap: 5px;
     }
     .textoContato {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
