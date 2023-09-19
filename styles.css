@@ -221,6 +221,11 @@ section::after {
     .textoContato {
         font-size: 10px;
     }
+    .navIndexItens {
+        color: white;
+        padding: 0 10px;
+        font-size: 10px;
+    }
 }
 
 /* Comentário no CSS */
