@@ -38,7 +38,7 @@
 
     <article>
       
-      <h2 id="irrf">Imposto sobre a renda retido na fonte - IRRF</h2>
+      <h2 id="impRenda">Imposto de Renda - IR</h2>
 
       <p>
         Primeiramente, você precisa saber que o Imposto de Renda (IR) é cobrado em dois momentos:
@@ -84,17 +84,64 @@
       <p>1º caso: Imposto à pagar</p>
       <p>Imposto apurado para o ano: R$ 1.500,00
         <br>Imposto pago ao longo do ano: R$ 1.200,00
-        <br>Imposto a pagar: R$ 300,00
+        <br>Imposto à pagar: R$ 300,00
       </p>
 
-      <p>2º caso: Imposto à pagar</p>
-      <p>Imposto apurado para o ano: R$ 1.500,00
-        <br>Imposto pago ao longo do ano: R$ 1.200,00
-        <br>Imposto a pagar: R$ 300,00
+      <p>2º caso: Imposto à restituir</p>
+      <p>Imposto apurado para o ano: R$ 1.300,00
+        <br>Imposto pago ao longo do ano: R$ 1.400,00
+        <br>Saldo à restituir: R$ 100,00
       </p>
+
+      <p>3º caso: Resultado zerado</p>
+      <p>Imposto apurado para o ano: R$ 1.100,00
+        <br>Imposto pago ao longo do ano: R$ 1.100,00
+        <br>Imposto à pagar: R$ 0,00
+      </p>
+
+      <h2 id="irrf">Imposto sobre a renda retido na fonte - IRRF</h2>
+
+        <p>
+            <table>
+                <caption>Cálculo do IRRF</caption>
+                
+                <tr>
+                    <td>Rendimentos Tributáveis [1]</td>
+                    <td><input type="number" id="redimentosTributaveis"></td>
+                </tr>
+                <tr>
+                    <td>Previdência <output id="percPrev"></output> [2]</td>
+                    <td><output id="valorPrev"></output></td>
+                </tr>
+                <tr>
+                    <td>Base de Cálculo do IRRF [3] [1-2]</td>
+                    <td><output id="BCIRRF"></output></td>
+                </tr>
+                <tr>
+                    <td>Alíquota <output id="percIRRF"></output> [4]</td>
+                    <td><output id="valorAliquota"></output></td>
+                </tr>
+                <tr>
+                    <td>Dedução [5]</td>
+                    <td><output id="deducaoBC"></output></td>
+                </tr>
+                <tr>
+                    <td>IRRF [6] [4-5]</td>
+                    <td><output id="valorIRRF"></output></td>
+                </tr>
+                <tr>
+                    <td>Salário líquido [3-6]</td>
+                    <td><output id="salarioLiquido"></output></td>
+                </tr>
+            </table>
+            <button onclick="salarioLiquido()">Calcular</button><br>
+        </p>
 
       <h2 id="dirpf">Declaração do Imposto sobre a Renda da Pessoa Física - DIRPF</h2>
       
+      <p>Para acessar informações sobre o IR diretamente na página do governo federal, acesse o seguinte link:
+        <br><a href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2023" target="_blank">IRPF - Tributação</a>
+      </p>
       <!-- <p>Primeiramente,você irá acessar o site pelo seguinte link:
       <br><a href="https://www.regularize.pgfn.gov.br/cadastro" target="_blank">Cadastro no Regularize - PGFN</a></p>
       
@@ -168,10 +215,11 @@
       
       <nav class="navArticle">
           <h5>Capítulos</h5>
-          <ul class="navUlArticle">
-          <li><a href="#irrf">IRRF</a></li>
-          <li><a href="#dirpf">DIRPF</a></li>
-          </ul>
+            <ul class="navUlArticle">
+                <li><a href="#impRenda">IR</a></li>
+                <li><a href="#irrf">IRRF</a></li>
+                <li><a href="#dirpf">DIRPF</a></li>
+            </ul>
       </nav>
       
       </section>
@@ -205,7 +253,7 @@
       
       </footer>
       
-      <script src="/sitCPF/sitCPF.js"></script>
+      <script src="/irpf/irpf.js"></script>
       
       </body>
       
