@@ -89,13 +89,13 @@
 
       <h2 id="irrf">Imposto sobre a renda retido na fonte - IRRF</h2>
 
-        <p>
-            <table>
+        <form>
+            <table style="table-layout: auto;">
                 <caption>Cálculo do IRRF</caption>
                 
                 <tr>
                     <td>Rendimentos Tributáveis [1]</td>
-                    <td style="text-align: end;"><input type="number" id="redimentosTributaveis"></td>
+                    <td style="text-align: end;"><input type="number" id="redimentosTributaveis" placeholder="xxxx,xx" size="10" min=0 required></td>
                 </tr>
                 <tr>
                     <td>Previdência <output id="percPrev"></output> [2]</td>
@@ -125,7 +125,7 @@
             <p>
               <button onclick="salarioLiquido()">Calcular</button>
             </p>
-        </p>
+        </form>
 
       <h2 id="dirpf">Declaração do Imposto sobre a Renda da Pessoa Física - DIRPF</h2>
       
