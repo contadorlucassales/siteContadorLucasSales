@@ -1,5 +1,5 @@
 function salarioLiquido() {
-  let rendimentosTributaveis = document.querySelector("#redimentosTributaveis").value;
+  let rendimentosTributaveis = document.querySelector("#rendimentosTributaveis").value;
 
   if (rendimentosTributaveis >= 7507.49) {
     document.getElementById("percPrev").innerHTML = "(14% de 7.507,49)";
