@@ -11,6 +11,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
+    color: #20478b;
 }
 
 h1, h2, h3, h4, h5, h6, p, label {
@@ -39,32 +40,26 @@ th, td {
 
 h1 {
     font-size: 40px;
-    color: #20478b;
 }
 
 h2 {
     font-size: 26px;
-    color: #20478b;
 }
 
 h3 {
     font-size: 24px;
-    color: #20478b;
 }
 
 h4 {
     font-size: 22px;
-    color: #4789f2;
 }
 
 h5 {
     font-size: 20px;
-    color: #20478b;
 }
 
 h6 {
     font-size: 18px;
-    color: #20478b;
 }
 
 p {
@@ -108,23 +103,65 @@ abbr {
     text-decoration: none;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #071d41;
+    color: white;
+    padding:10px;
+  }
+
+@media (max-width: 600px) {
+    .logoContato {
+        width: 21px;
+    }
+}
+
 /* Itens do Index */
 
-#navIndex {
+.navIndex {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 10px 0;
-    background-color: #20478b;
-}
-
-.navIndexItens {
+    background-color: #071d41;
+  }
+  
+  .navIndex ul {
+    padding-inline-start: 0px;
+  }
+  
+  .navIndex li {
+    display: inline-block;
+  }
+  
+  .navIndex li a {
+    display: inline-block;
+    padding: 0px 15px;
+  }
+  
+  .navIndex li a:link {
     color: white;
-    padding: 0 20px;
-}
-
-#profissional {
+    text-decoration: none;
+  }
+  
+  .navIndex li a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navIndex li a:hover {
+    color: #1351b4;
+    cursor: pointer;
+  }
+  
+  .navIndex li a:active {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #profissional {
     background-image: url('imagens/background-op30.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,36 +170,40 @@ abbr {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.contact-container {
+  }
+  
+  .contact-container {
     display: grid;
     grid-gap: 40px;
     display: flex;
     justify-content: center;
-}
-
-.left, .right {
+  }
+  
+  .left, .right {
     flex-direction: column;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #20478b;
-    color: white;
-    padding:10px;
-}
-
-#whatsapp {
+  }
+  
+  #whatsapp {
     position: fixed; bottom: 20px; right: 30px; z-index: 9999;
-}
+  }
+  
+  @media (max-width: 600px) {
+      .contact-container {
+        grid-gap: 5px;
+    }
+    .textoContato {
+        font-size: 10px;
+    }
+    .navIndex li a {
+        padding: 0 10px;
+        font-size: 13px;
+    }
+  }
 
 /* Itens dos Artigos */
 
 .headerArticle {
-    background-color: #20478b;
+    background-color: #071d41;
     padding: 30px;
     text-align: center;
     font-size: 35px;
@@ -209,23 +250,9 @@ section::after {
       width: 100%;
       height: auto;
     }
-    .logoContato {
-        width: 21px;
-      }
     .footerItem {
         padding: 0 5px;
       }
-      .contact-container {
-        grid-gap: 5px;
-    }
-    .textoContato {
-        font-size: 10px;
-    }
-    .navIndexItens {
-        color: white;
-        padding: 0 10px;
-        font-size: 13px;
-    }
 }
 
 /* Comentário no CSS */
