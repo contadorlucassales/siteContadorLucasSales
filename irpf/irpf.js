@@ -1,33 +1,33 @@
 function salarioLiquido() {
-  let valorRendimTrib = document.querySelector("#redimentosTributaveis").value;
+  let rendimentosTributaveis = document.querySelector("#redimentosTributaveis").value;
 
-  if (valorRendimTrib >= 7507.49) {
+  if (rendimentosTributaveis >= 7507.49) {
     document.getElementById("percPrev").innerHTML = "(14% de 7.507,49)";
     document.getElementById("valorPrev").innerHTML = (7507.49 * 0.14).toFixed(2);
   } 
 
-  else if (valorRendimTrib >= 3856.95) {
+  else if (rendimentosTributaveis >= 3856.95) {
     document.getElementById("percPrev").innerHTML = "(14%)";
-    document.getElementById("valorPrev").innerHTML = (valorRendimTrib * 0.14).toFixed(2);
+    document.getElementById("valorPrev").innerHTML = (rendimentosTributaveis * 0.14).toFixed(2);
   }
 
-  else if (valorRendimTrib >= 2571.30) {
+  else if (rendimentosTributaveis >= 2571.30) {
     document.getElementById("percPrev").innerHTML = "(12%)";
-    document.getElementById("valorPrev").innerHTML = (valorRendimTrib * 0.12).toFixed(2);
+    document.getElementById("valorPrev").innerHTML = (rendimentosTributaveis * 0.12).toFixed(2);
   }
 
-  else if (valorRendimTrib >= 1320.01) {
+  else if (rendimentosTributaveis >= 1320.01) {
     document.getElementById("percPrev").innerHTML = "(9%)";
-    document.getElementById("valorPrev").innerHTML = (valorRendimTrib * 0.09).toFixed(2);
+    document.getElementById("valorPrev").innerHTML = (rendimentosTributaveis * 0.09).toFixed(2);
   }
 
   else {
     document.getElementById("percPrev").innerHTML = "(7,5%)";
-    document.getElementById("valorPrev").innerHTML = (valorRendimTrib * 0.075).toFixed(2);
+    document.getElementById("valorPrev").innerHTML = (rendimentosTributaveis * 0.075).toFixed(2);
   }
 
   let valorPrev = document.querySelector("#valorPrev").value;
-  document.getElementById("BCIRRF").innerHTML = (valorRendimTrib - valorPrev).toFixed(2);
+  document.getElementById("BCIRRF").innerHTML = (rendimentosTributaveis - valorPrev).toFixed(2);
   let bcirrf = document.querySelector("#BCIRRF").value;
 
   if (bcirrf >= 4664.69) {
