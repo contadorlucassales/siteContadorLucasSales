@@ -1,33 +1,42 @@
-function salarioLiquido() {
-  let rendimentosTributaveis = document.querySelector("#rendimentosTributaveis").value;
+var rendimentosTributaveis = document.getElementById("rendimentosTributaveis");
 
-  if (rendimentosTributaveis >= 7507.49) {
+rendimentosTributaveis.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    salarioLiquido();
+  }
+});
+
+function salarioLiquido() {
+
+  let rendimentosTributaveisValue = rendimentosTributaveis.value;
+
+  if (rendimentosTributaveisValue >= 7507.49) {
     document.getElementById("percPrev").innerHTML = "(14% de 7.507,49)";
     document.getElementById("valorPrev").innerHTML = (7507.49 * 0.14).toFixed(2);
   } 
 
-  else if (rendimentosTributaveis >= 3856.95) {
+  else if (rendimentosTributaveisValue >= 3856.95) {
     document.getElementById("percPrev").innerHTML = "(14%)";
-    document.getElementById("valorPrev").innerHTML = (rendimentosTributaveis * 0.14).toFixed(2);
+    document.getElementById("valorPrev").innerHTML = (rendimentosTributaveisValue * 0.14).toFixed(2);
   }
 
-  else if (rendimentosTributaveis >= 2571.30) {
+  else if (rendimentosTributaveisValue >= 2571.30) {
     document.getElementById("percPrev").innerHTML = "(12%)";
-    document.getElementById("valorPrev").innerHTML = (rendimentosTributaveis * 0.12).toFixed(2);
+    document.getElementById("valorPrev").innerHTML = (rendimentosTributaveisValue * 0.12).toFixed(2);
   }
 
-  else if (rendimentosTributaveis >= 1320.01) {
+  else if (rendimentosTributaveisValue >= 1320.01) {
     document.getElementById("percPrev").innerHTML = "(9%)";
-    document.getElementById("valorPrev").innerHTML = (rendimentosTributaveis * 0.09).toFixed(2);
+    document.getElementById("valorPrev").innerHTML = (rendimentosTributaveisValue * 0.09).toFixed(2);
   }
 
   else {
     document.getElementById("percPrev").innerHTML = "(7,5%)";
-    document.getElementById("valorPrev").innerHTML = (rendimentosTributaveis * 0.075).toFixed(2);
+    document.getElementById("valorPrev").innerHTML = (rendimentosTributaveisValue * 0.075).toFixed(2);
   }
 
   let valorPrev = document.querySelector("#valorPrev").value;
-  document.getElementById("BCIRRF").innerHTML = (rendimentosTributaveis - valorPrev).toFixed(2);
+  document.getElementById("BCIRRF").innerHTML = (rendimentosTributaveisValue - valorPrev).toFixed(2);
   let bcirrf = document.querySelector("#BCIRRF").value;
 
   if (bcirrf >= 4664.69) {
