@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #20478b;
 }
 
-h1, h2, h3, h4, h5, h6, p, label {
+h1, h2, h3, h4, h5, h6, label {
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
@@ -165,7 +165,7 @@ footer {
     text-decoration: none;
   }
   
-  #profissional {
+#profissional {
     background-image: url('imagens/background-op30.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -174,14 +174,18 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
+
+.sectionsIndex {
+    padding: 0px 20px;
+}
   
-  .contact-container {
+.contact-container {
     display: grid;
     grid-gap: 40px;
     display: flex;
     justify-content: center;
-  }
+}
   
   .left, .right {
     flex-direction: column;

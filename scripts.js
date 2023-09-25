@@ -1,6 +1,3 @@
-function instagram() {
-    window.location.href = "https://www.instagram.com/contadorlucassales/";
-  }
+// Uma forma de fazer voltar para a página anterior
+// onclick="javascript:history.go(-1)"
 
-// comentário no JavaScript
-/* comentário no JavaScript */
