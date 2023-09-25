@@ -75,7 +75,3 @@ function salarioLiquido() {
   let valorIRRF = document.querySelector("#valorIRRF").value;
   document.getElementById("salarioLiquido").innerHTML = (bcirrf - valorIRRF).toFixed(2);
 }
-
-function home() {
-  window.location.href = "../index.html";
-}
