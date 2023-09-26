@@ -219,6 +219,11 @@ footer {
     margin: 0;
 }
 
+.sectionArtigos {
+    display: flex;
+    align-items: stretch;
+}
+
 article {
     float: left;
     padding: 20px;
