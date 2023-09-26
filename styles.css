@@ -221,7 +221,6 @@ footer {
 
 .sectionArtigos {
     display: flex;
-    align-items: stretch;
 }
 
 article {
@@ -242,7 +241,9 @@ article p {
     padding: 20px;
 }
 
-.navUlArticle {
+/* .navUlArticle */
+
+ul {
     list-style-type: none;
     padding: 0;
 }
@@ -258,6 +259,10 @@ section::after {
 }
 
 @media (max-width: 600px) {
+    .sectionArtigos {
+        display: block;
+    }
+
     .navArticle, article {
       width: 100%;
       height: auto;
