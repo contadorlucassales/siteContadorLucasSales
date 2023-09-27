@@ -1,9 +1,6 @@
-let rendimentosTributaveis = document.getElementById("rendimentosTributaveis");
-let naoTributaveis = document.getElementById("naoTributaveis");
-let naoDedutiveis = document.getElementById("naoDedutiveis");
-let rendimentosTributaveisValue = rendimentosTributaveis.value;
-let naoTributaveisValue = naoTributaveis.value;
-let naoDedutiveisValue = naoDedutiveis.value;
+var rendimentosTributaveis = document.getElementById("rendimentosTributaveis");
+var naoTributaveis = document.getElementById("naoTributaveis");
+var naoDedutiveis = document.getElementById("naoDedutiveis");
 
 rendimentosTributaveis.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
@@ -24,6 +21,8 @@ naoDedutiveis.addEventListener("keydown", function(event) {
 });
 
 function salarioLiquido() {
+
+  let rendimentosTributaveisValue = rendimentosTributaveis.value;
 
   if (rendimentosTributaveisValue >= 7507.49) {
     document.getElementById("percPrev").innerHTML = "(14% de 7.507,49)";
@@ -92,6 +91,8 @@ function salarioLiquido() {
   document.getElementById("salarioDepoisIRRF").innerHTML = (bcirrf - valorIRRF).toFixed(2);
 
   let salarioDepoisIRRF = document.querySelector("#salarioDepoisIRRF").value;
+  let naoTributaveisValue = naoTributaveis.value;
+  let naoDedutiveisValue = naoDedutiveis.value;
   document.getElementById("salarioLiquido").innerHTML = (salarioDepoisIRRF + naoTributaveisValue - naoDedutiveisValue).toFixed(2);
 }
 
