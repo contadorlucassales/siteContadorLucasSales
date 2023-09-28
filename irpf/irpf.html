@@ -119,10 +119,10 @@
                     <td>Salário depois do IRRF [7] [3-6]</td>
                     <td style="text-align: end;"><output id="salarioDepoisIRRF"></output></td>
                 </tr>
-                <tr style="color: green;">
+                <!-- <tr style="color: green;">
                   <td>Rendimentos Não Tributáveis [8]</td>
                   <td style="text-align: end;"><input type="number" id="naoTributaveis" placeholder="XXXX,XX"  size="12" step="0.01"></td>
-              </tr>
+              </tr> -->
               <tr style="color: red;">
                 <td>Descontos Não Dedutíveis [9]</td>
                 <td style="text-align: end;"><input type="number" id="naoDedutiveis" placeholder="XXXX,XX"  size="12" step="0.01"></td>
@@ -136,9 +136,11 @@
               <button onclick="salarioLiquido()">Calcular</button>
             </p>
       <h2 id="dirpf">Declaração do Imposto sobre a Renda da Pessoa Física - DIRPF</h2>
+
+      <p>A DIRPF é feita no Portal e-CAC. O acesso pode ser feito por meio de um código de acesso ou pela conta GOV.BR.</p>
       
-      <p>Para acessar informações sobre o IR diretamente na página do governo federal, acesse o seguinte link:
-        <br><a href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2023" target="_blank">IRPF - Tributação</a>
+      <p>Para acessar o e-CAC clique no seguinte link:
+        <br><a href="https://cav.receita.fazenda.gov.br/autenticacao/login/index" target="_blank">Portal e-CAC</a>
       </p>
       
      </article>
