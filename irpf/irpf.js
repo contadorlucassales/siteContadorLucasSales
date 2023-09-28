@@ -1,5 +1,5 @@
 var rendimentosTributaveis = document.getElementById("rendimentosTributaveis");
-var naoTributaveis = document.getElementById("naoTributaveis");
+// var naoTributaveis = document.getElementById("naoTributaveis");
 var naoDedutiveis = document.getElementById("naoDedutiveis");
 
 rendimentosTributaveis.addEventListener("keydown", function(event) {
@@ -8,11 +8,11 @@ rendimentosTributaveis.addEventListener("keydown", function(event) {
   }
 });
 
-naoTributaveis.addEventListener("keydown", function(event) {
-  if (event.key === "Enter") {
-    salarioLiquido();
-  }
-});
+// naoTributaveis.addEventListener("keydown", function(event) {
+//   if (event.key === "Enter") {
+//     salarioLiquido();
+//   }
+// });
 
 naoDedutiveis.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
@@ -91,9 +91,10 @@ function salarioLiquido() {
   document.getElementById("salarioDepoisIRRF").innerHTML = (bcirrf - valorIRRF).toFixed(2);
 
   let salarioDepoisIRRF = document.querySelector("#salarioDepoisIRRF").value;
-  let naoTributaveisValue = naoTributaveis.value;
+  // let naoTributaveisValue = naoTributaveis.value;
   let naoDedutiveisValue = naoDedutiveis.value;
-  document.getElementById("salarioLiquido").innerHTML = (salarioDepoisIRRF + naoTributaveisValue - naoDedutiveisValue).toFixed(2);
+  // document.getElementById("salarioLiquido").innerHTML = (salarioDepoisIRRF + naoTributaveisValue - naoDedutiveisValue).toFixed(2);
+  document.getElementById("salarioLiquido").innerHTML = (salarioDepoisIRRF - naoDedutiveisValue).toFixed(2);
 }
 
 function home() {
