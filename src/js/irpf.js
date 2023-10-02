@@ -96,7 +96,3 @@ function salarioLiquido() {
   // document.getElementById("salarioLiquido").innerHTML = (salarioDepoisIRRF + naoTributaveisValue - naoDedutiveisValue).toFixed(2);
   document.getElementById("salarioLiquido").innerHTML = (salarioDepoisIRRF - naoDedutiveisValue).toFixed(2);
 }
-
-function home() {
-  window.location.href = "../index.html";
-}
