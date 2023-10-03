@@ -66,11 +66,12 @@ p {
 }
 
 figure {
+  margin: auto;
   text-align: center;
 }
 
 img {
-  max-width: 100%;
+  max-width: 70%;
   height:auto;
 }
 
