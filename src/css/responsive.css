@@ -1,0 +1,31 @@
+@media (max-width: 600px) {
+  .logoContato {
+    width: 21px;
+  }
+
+  .contact-container {
+    grid-gap: 20px;
+  }
+
+  .textoContato {
+    font-size: 10px;
+  }
+
+  .navIndex li a {
+    padding: 0 10px;
+    font-size: 13px;
+  }
+
+  .sectionArtigos {
+    display: block;
+  }
+
+  .navArticle, article {
+    width: 100%;
+    height: auto;
+  }
+
+  .footerItem {
+    padding: 0 5px;
+  }
+}
