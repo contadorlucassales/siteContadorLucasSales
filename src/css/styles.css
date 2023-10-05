@@ -248,6 +248,12 @@ ul {
   padding: 0;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 53.4px;
+}
+
 section::after {
   content: "";
   display: table;
